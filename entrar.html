@@ -6,7 +6,9 @@
   <title>Sobre - IFSP - Pirituba</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
 
 
 <body>
@@ -19,37 +21,38 @@
 
   <div class="container vh-100 d-flex justify-content-center align-items-center">
     <div class="section" style="width: 100%; max-width: 400px;">
-        <!-- Área do Logo -->
-        <div class="text-center">
-            <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/ifsp.png?raw=true" alt="Logo" class="mb-3" style="width: 100px; height: auto;">
+      <!-- Área do Logo -->
+      <div class="text-center">
+        <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/ifsp.png?raw=true" alt="Logo" class="mb-3"
+          style="width: 100px; height: auto;">
+      </div>
+      <!-- Título -->
+      <h2 class="text-center mb-4">Faça Login</h2>
+      <!-- Formulário -->
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label text-center d-block">Endereço de email</label>
+          <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+          <div class="invalid-feedback">Por favor, preencha este campo.</div>
         </div>
-        <!-- Título -->
-        <h2 class="text-center mb-4">Faça Login</h2>
-        <!-- Formulário -->
-        <form>
-            <div class="mb-3">
-                <label for="email" class="form-label text-center d-block">Endereço de email</label>
-                <input type="email" class="form-control" id="email" placeholder="Seu email" required>
-                <div class="invalid-feedback">Por favor, preencha este campo.</div>
-            </div>
-            <div class="mb-3">
-                <label for="senha" class="form-label text-center d-block">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Senha" required>
-                <div class="invalid-feedback">Por favor, preencha este campo.</div>
-            </div>
-            <div class="mb-3 form-check text-center ">
-                <input type="checkbox" class="form-check-input" id="lembrar">
-                <label class="form-check-label" for="lembrar">Lembrar de mim</label>
-            </div>
-            <div class="mb-3 text-center">
-              <a href="https://youtu.be/dQw4w9WgXcQ" class="text-decoration-none text-center">Esqueci a senha</a>
-            </div>
-            <button type="submit" class="btn btn-primary d-block mx-auto">Login</button>
-            <div class="text-center mt-3">
-            </div>
-        </form>
+        <div class="mb-3">
+          <label for="senha" class="form-label text-center d-block">Senha</label>
+          <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+          <div class="invalid-feedback">Por favor, preencha este campo.</div>
+        </div>
+        <div class="mb-3 form-check text-center ">
+          <input type="checkbox" class="form-check-input" id="lembrar">
+          <label class="form-check-label" for="lembrar">Lembrar de mim</label>
+        </div>
+        <div class="mb-3 text-center">
+          <a href="https://youtu.be/dQw4w9WgXcQ" class="text-decoration-none text-center">Esqueci a senha</a>
+        </div>
+        <button type="submit" class="btn btn-primary d-block mx-auto">Login</button>
+        <div class="text-center mt-3">
+        </div>
+      </form>
     </div>
-</div>
+  </div>
 
 
   <!-- Script para o JS do Bootstrap -->

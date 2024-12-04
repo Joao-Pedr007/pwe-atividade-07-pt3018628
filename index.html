@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="slideshow.css">
 
-<header id="cabecalho"></header>
+  <header id="cabecalho"></header>
 
   <nav>
     <object width="100%" height="250px" data="menu.html"></object>
@@ -23,12 +23,12 @@
       <div class="numbertext">1 / 4</div>
       <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/A.png?raw=true" style="width:100%">
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 4</div>
       <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/B.jpg?raw=true" style="width:100%">
     </div>
-    
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 4</div>
       <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/C.jpg?raw=true" style="width:100%">
@@ -41,82 +41,82 @@
       </h1>
       <iframe class='centro' width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po"
         title="Desafio de Inovação: webinar com executivos da empresa Sem Parar e representantes da Inova IFSP"></iframe>
-  </section>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
+      </section>
     </div>
 
-    
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
       }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
       }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
 
 
   <div class="grid">
     <div class="item">
-        <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/eleicoes.jpg?raw=true" class=""/>
+      <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/eleicoes.jpg?raw=true" class="" />
 
-        <h3>Radar IFSP: informe-se sobre as eleições no dia 13 de outubro</h3>
-        <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+      <h3>Radar IFSP: informe-se sobre as eleições no dia 13 de outubro</h3>
+      <p>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
     </div>
 
     <div class="item">
-        <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/snct.jpg?raw=true" class=""/>
+      <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/snct.jpg?raw=true" class="" />
 
-        <h3>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h3>
-        <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+      <h3>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h3>
+      <p>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
     </div>
 
     <div class="item">
-        <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/residencia.png?raw=true" class=""/>
+      <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/residencia.png?raw=true" class="" />
 
-        <h3>IFSP oferece bolsa aos voluntários da Residência Pedagógica</h3>
-        <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+      <h3>IFSP oferece bolsa aos voluntários da Residência Pedagógica</h3>
+      <p>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
     </div>
 
     <div class="item">
-        <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/maratona.jpeg?raw=true" class=""/>
+      <img src="https://github.com/pwe-redes/pwe_imagens/blob/master/maratona.jpeg?raw=true" class="" />
 
-        <h3>Inscrições abertas para a III Maratona InterIF</h3>
-        <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; Inscrições até 26 de outubro</p>
+      <h3>Inscrições abertas para a III Maratona InterIF</h3>
+      <p>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; Inscrições até 26 de outubro</p>
     </div>
-</div>
+  </div>
 
 
 
